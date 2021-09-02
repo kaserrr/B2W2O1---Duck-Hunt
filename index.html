@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Duck hunt</title>
+</head>
+<body>
+    <div class="OOF"><h2>Hit</h2> <span id="hit">0</span></div>
+    <div class="OOF"><h2>Miss</h2> <span id="miss">0</span></div>
+    <img id="duck" src="images/duck.gif" alt="duck" onclick="score(0)">
+    <div id="stage" onclick="score(1)"></div>
+    <script src="code.js"></script>
+    <div id="win" class="d-none">
+        <h1>You won</h1>
+        <button onclick="restart()">restart</button>
+    </div>
+    <div id="lose" class="d-none">
+        <h1>You lost</h1>
+        <button onclick="restart()">restart</button>
+    </div>
+</body>
+</html>
